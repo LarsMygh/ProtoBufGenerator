@@ -822,6 +822,11 @@ begin
       SL.Add('  ' + Proto.Imports[Proto.Imports.Count - 1] + ';');
     end;
   SL.Add('');
+  //
+  SL.Add('type');
+  SL.Add('  Tuint8 = UInt8;');
+  SL.Add('');
+  //
   SL.Add('type');
   // add all enums
   for i := 0 to Proto.ProtoBufEnums.Count - 1 do
